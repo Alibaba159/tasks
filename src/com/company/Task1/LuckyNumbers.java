@@ -6,7 +6,7 @@ package com.company.Task1;
 public class LuckyNumbers {
     public static void numbersOut(int[] numbers6) {
         System.out.println("6.6. «Счастливые» числа.");
-        String num, numbers;
+        String num, numbers = new String();
         int i, j;
         for (i = 0; i < numbers6.length; i++) {
             num = Integer.toString(numbers6[i]);

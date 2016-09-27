@@ -5,7 +5,7 @@ package com.company.Task1;
  */
 public class UniqueNumbersInNumber {
     public static void findNumbers(int[] numbers6) {
-        String list;
+        String list = new String();
         for (int num : numbers6
                 ) {
             String n = Integer.toString(num);
