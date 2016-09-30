@@ -1,5 +1,6 @@
 package com.company.Task2;
 
+import java.text.DecimalFormat;
 import java.util.Arrays;
 
 /**
@@ -9,22 +10,26 @@ public class ElementMinusArithmeticMean {
 
     public static void resultMatrix(int[][] matrix) {
         System.out.println("ElementMinusArithmeticMean matrix result");
+        String result=new String();
+        DecimalFormat df=new DecimalFormat("#,##");
         for (int[] row:matrix
              ) {
-            int arithmeticMean =arithmeticMean(row);
+            double arithmeticMean =arithmeticMean(row);
             for (int i=0;i<row.length;i++){
-                row[i]=row[i]-arithmeticMean;
+               result+=String.format("%.2f",row[i]-arithmeticMean)+"; ";
             }
-            System.out.println(Arrays.toString(row));
+            result+="\n";
         }
+        System.out.println(result);
     }
 
-    private static int arithmeticMean(int[] row) {
-        int am = 0;
+    private static double arithmeticMean(int[] row) {
+        double am;
+        int sum = 0;
         for (int num : row) {
-            am += num;
+            sum += num;
         }
-        am = am / row.length;
+        am = (double)sum / row.length;
         return am;
     }
 }

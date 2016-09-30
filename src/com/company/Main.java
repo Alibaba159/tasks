@@ -1,40 +1,60 @@
 package com.company;
 
 import com.company.Task1.*;
-import com.company.Task2.FirstUniqueNumber;
-import com.company.Task2.Matrix;
-import com.company.Task2.MatrixRandom;
-import com.company.Task2.SortNumbersByLength;
+import com.company.Task2.*;
+
 
 /**
- * Ввести n чисел с консоли.
- *
- *
- * 3. Вывести на консоль те числа, длина которых меньше (больше) средней, а также длину.
- * 4. Найти число, в котором число различных цифр минимально. Если таких чисел несколько, найти первое из них.
- * 5. Найти количество чисел, содержащих только четные цифры, а среди них количество чисел с равным числом четных и нечетных цифр.
- * 6. Найти число, цифры в котором идут в строгом порядке возрастания. Если таких чисел несколько, найти первое из них.
- *
-
-
- * 9.2. Выполнить циклический сдвиг заданной матрицы на k позиций вправо
- * (влево, вверх, вниз).
- * 9.3. Найти и вывести наибольшее число возрастающих (убывающих) элементов матрицы, идущих подряд.
- * 9.4. Найти сумму элементов матрицы, расположенных между первым и вторым положительными элементами каждой строки.
- *
- * 9.6 Построить матрицу, вычитая из элементов каждой строки матрицы ее среднее арифметическое.
- * 9.7. Уплотнить матрицу, удаляя из нее строки и столбцы, заполненные нулями.
- *
+ * Task 2
  */
 public class Main {
 
 
     public static void main(String[] args) {
+        /**
+         * 1. Найти самое короткое и самое длинное число. Вывести найденные числа и их длину.
+         */
         //LongestAndShortestNumber.resultOut(EnterIntArr.returnArr());
-        /*-*///SortNumbersByLength.sortingResultOut(EnterIntArr.returnArr());
-        //FirstUniqueNumber.resultOut(EnterIntArr.returnArr());
+
+        /**
+         * 2. Упорядочить и вывести числа в порядке возрастания (убывания) значений их длины.
+         */    /*-*/
+        //SortNumbersByLength.sortingResultOut(EnterIntArr.returnArr());
+
+        /**
+         * 3. Вывести на консоль те числа, длина которых меньше (больше) средней, а также длину.
+         */
+       /* LengthArithmeticMeanLength.lessLength(EnterIntArr.returnArr());
+        LengthArithmeticMeanLength.moreLength(EnterIntArr.returnArr());*/
+
+        /**
+         * 4. Найти число, в котором число различных цифр минимально. Если таких чисел несколько, найти первое из них.
+         */
+        // MinUniqueNumbers.numbersOut(EnterIntArr.returnArr());
+        /**
+         * 5. Найти количество чисел, содержащих только четные цифры, а среди них количество чисел с равным числом четных и нечетных цифр.
+         */
+        //EvenNumbersInNum.CountEvenNumbers(EnterIntArr.returnArr());
+        /**
+         *  6. Найти число, цифры в котором идут в строгом порядке возрастания. Если таких чисел несколько, найти первое из них.
+         */
+        //NumbersInAscendingOrder.firstEnter(EnterIntArr.returnArr());
+        /**
+         * 7. Найти число, состоящее только из различных цифр. Если таких чисел несколько, найти первое из них.
+         */
+        //FirstUniqueNumber.uniqueOut(EnterIntArr.returnArr());
+
+        /**
+         * 8. Вывести числа от 1 до k в виде матрицы N x N слева направо и сверху вниз.
+         */
         //Matrix.scanAndOut();
-        MatrixRandom.matrixOut();
+
+        /**
+         * 9.Ввести с консоли n-размерность матрицы a [n] [n]. Задать значения элемен-
+         * тов матрицы в интервале значений от -n до n с помощью датчика случайных чи-
+         * сел.
+         */
+        // MatrixRandom.matrixOut();
 
     }
 }

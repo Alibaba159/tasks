@@ -1,4 +1,6 @@
-package com.company.Task2;
+package com.company.Task2.RandomMatrix_9;
+
+import com.company.Task2.MatrixOut;
 
 import java.util.Arrays;
 
@@ -17,10 +19,7 @@ public class TurnMatrix {
                     matrix[width - 1 - j][i] = x;
                 }
             }
-            for (int[] w : matrix
-                    ) {
-                System.out.println(Arrays.toString(w));
-            }
+            MatrixOut.Out(matrix);
         } else System.out.println("Enter sizes for Square matrix");
         return matrix;
     }

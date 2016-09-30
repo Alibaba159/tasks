@@ -1,4 +1,4 @@
-package com.company.Task2;
+package com.company.Task2.RandomMatrix_9;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -32,25 +32,43 @@ public class MatrixRandom {
             System.out.println(Arrays.toString(w));
         }
 
-       /* *//**
-         * sorting source matrix
-         *//*
-        MatrixSorting.sort(matrix, width, height);
+        /**
+         * 9.1. Упорядочить строки (столбцы) матрицы в порядке возрастания значений.
+         */
+        //MatrixSorting.sortByRows(matrix);
+        //MatrixSorting.sortByColumn(matrix, width, height);
 
-        *//**
-         * turned source matrix
-         *//*
-        System.out.println("Rotated source matrix 90");
+        /**
+         * 9.2. Выполнить циклический сдвиг заданной матрицы на k позиций вправо
+         * (влево, вверх, вниз).
+         */
+
+        /**
+         * 9.3. Найти и вывести наибольшее число возрастающих (убывающих) элементов матрицы, идущих подряд.
+         */
+
+        /**
+         *  9.4. Найти сумму элементов матрицы, расположенных между первым и вторым положительными элементами каждой строки.
+         */
+
+        /**
+         * 9.5. Повернуть матрицу на 90 (180, 270) градусов против часовой стрелки.
+         */
+        /*System.out.println("Rotated source matrix 90");
         int[][] turnedMatrix90 = TurnMatrix.turn90(matrix, width, height);
         System.out.println("Rotated source matrix 180");
         int[][] turnedMatrix180 = TurnMatrix.turn90(turnedMatrix90, width, height);
         System.out.println("Rotated source matrix 270");
-        int[][] turnedMatrix270 = TurnMatrix.turn90(turnedMatrix180, width, height);
-*/
+        int[][] turnedMatrix270 = TurnMatrix.turn90(turnedMatrix180, width, height);*/
+
         /**
          * 9.6 Построить матрицу, вычитая из элементов каждой строки матрицы ее среднее арифметическое.
          */
-        ElementMinusArithmeticMean.resultMatrix(matrix);
+        // ElementMinusArithmeticMean.resultMatrix(matrix);
+        /**
+         * 9.7. Уплотнить матрицу, удаляя из нее строки и столбцы, заполненные нулями.
+         */
+        CompactionMatrix.compactOut(matrix, width, height);
         /**
          *9.8. Преобразовать строки матрицы таким образом, чтобы элементы, равные нулю, располагались после всех остальных.
          */

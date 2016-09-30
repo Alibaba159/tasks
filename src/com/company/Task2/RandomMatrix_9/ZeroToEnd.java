@@ -1,4 +1,6 @@
-package com.company.Task2;
+package com.company.Task2.RandomMatrix_9;
+
+import com.company.Task2.MatrixOut;
 
 import java.util.Arrays;
 
@@ -19,10 +21,7 @@ public class ZeroToEnd {
                 }
             }
         }
-        System.out.println("rez");
-        for (int[] w : matrix
-                ) {
-            System.out.println(Arrays.toString(w));
-        }
+        System.out.println("Zero To the End result");
+        MatrixOut.Out(matrix);
     }
 }
